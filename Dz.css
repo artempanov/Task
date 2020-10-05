@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+}
+.container{
+
+    margin: 0 auto;
+ 
+}
+.header{
+    border-bottom: 2px solid #000;
+    height: 50px;
+    padding: 25px;
+    background-color: #58a032;
+}
+
+.content{
+     height: 100%;
+    width: 100%;
+     flex-wrap: wrap;
+ 
+    display: flex;
+}
+
+.sidebar,
+.sidebar1{
+     flex-grow: 1;
+  
+    flex-basis: 0;
+    padding: 25px;
+    background-color: #eee;
+}
+
+.main{
+  border-right: 2px solid #000;
+     border-left: 2px solid #000;
+    padding-left: 20px;
+    flex-basis: 60%;
+    background-color: white;
+}
+.footer{
+    border-top: 2px solid #000;
+     height: 50px;
+    padding: 25px;
+    background-color: #58a032;
+}
+
+
+
+
+
+@media (max-width: 400px) {
+    .header{
+        height: 30px;
+    }
+     .content{
+      height: 485px;
+       
+         align-content:center;
+       
+    }
+   
+    .main{
+         border-top: 2px solid #000;
+      margin-top: -120px;
+          flex-basis: 100%;
+        border: none;
+        order: 1;
+    }
+    .sidebar1{
+height: 80px;
+     border-bottom: 2px solid #000;
+          border-top: 2px solid #000;
+        flex-basis: 100%;
+        order: 2;
+    }
+    .sidebar{
+        
+          border-bottom: 2px solid #000;
+        height: 80px;
+       flex-basis: 100%;
+        order: 3;
+    }
+          
+}
+
+@media (max-height: 400px) {
+    .footer{
+      
+        padding: 20px 0 20px 20px;
+        margin: 20px 0 0 0;
+    }
+    .content{
+        flex-direction: row;
+        align-content: center;
+    }
+    .header
+    {
+        height: 40px;
+    }
+    .content{
+        
+      height: 171px;
+    }
+  
+    .main{
+        border-top: 2px solid #000;
+          flex-basis: 100%;
+        border: none;
+        order: 1;
+    }
+    .sidebar1{
+           
+     border-bottom: 2px solid #000;
+          border-top: 2px solid #000;
+        flex-basis: 100%;
+        order: 2;
+    }
+    .sidebar{
+      
+
+        line-height: 0.9;
+       flex-basis: 100%;
+        order: 3;
+        border-bottom: 2px solid #000;
+    }
+}
